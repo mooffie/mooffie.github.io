@@ -1,0 +1,45 @@
+<style type="text/css">
+.syn_background {
+  padding: 0.5em 0.5em;
+}
+.syn_background { color: inherit; background-color: inherit }
+.syn_color_000000_background_E4E3ED { color: 000000; background-color: E4E3ED }
+.syn_color_000000_background_80E080 { color: 000000; background-color: 80E080 }
+.syn_color_000000_background_4C84CD { color: 000000; background-color: 4C84CD }
+.syn_color_E4E3ED_background_8E93A5 { color: E4E3ED; background-color: 8E93A5 }
+.syn_color_000000_background_CBD1E1 { color: 000000; background-color: CBD1E1 }
+.syn_color_000000_background_E08080 { color: 000000; background-color: E08080 }
+.syn_color_000000_background_81A7D9 { color: 000000; background-color: 81A7D9 }
+
+</style>
+<pre class="syn_background"><span class="syn_color_000000_background_4C84CD">  ...ler/mockup/diff/file1.c      1+0    Col 0      ...ler/mockup/diff/file2.c      0+1    Dif 4    
+</span><span class="syn_color_000000_background_E4E3ED">╔═══╤════════════════════════════════════════════╗╔═══╤════════════════════════════════════════════╗
+║ 1+│</span><span class="syn_color_000000_background_80E080">/*                                          </span><span class="syn_color_000000_background_E4E3ED">║║  -│</span><span class="syn_color_000000_background_E08080">                                            </span><span class="syn_color_000000_background_E4E3ED">║
+║ 2+│</span><span class="syn_color_000000_background_80E080"> * My first C program.                      </span><span class="syn_color_000000_background_E4E3ED">║║  -│</span><span class="syn_color_000000_background_E08080">                                            </span><span class="syn_color_000000_background_E4E3ED">║
+║ 3+│</span><span class="syn_color_000000_background_80E080"> */                                         </span><span class="syn_color_000000_background_E4E3ED">║║  -│</span><span class="syn_color_000000_background_E08080">                                            </span><span class="syn_color_000000_background_E4E3ED">║
+║ 4 │#include &lt;stdio.h&gt;                          ║║ 1 │#include &lt;stdio.h&gt;                          ║
+║ 5 │                                            ║║ 2 │                                            ║
+║ 6*│</span><span class="syn_color_000000_background_CBD1E1">char </span><span class="syn_color_000000_background_80E080">*week[] = {"Sun", "Mon", "Tue", "Wed", </span><span class="syn_color_000000_background_E4E3ED">║║ 3*│</span><span class="syn_color_000000_background_80E080">typedef </span><span class="syn_color_000000_background_CBD1E1">char </span><span class="syn_color_000000_background_80E080">day_name[10]</span><span class="syn_color_000000_background_CBD1E1">;                  </span><span class="syn_color_000000_background_E4E3ED">║
+║  *│</span><span class="syn_color_000000_background_E08080">                                            </span><span class="syn_color_000000_background_E4E3ED">║║ 4*│</span><span class="syn_color_000000_background_80E080">                                            </span><span class="syn_color_000000_background_E4E3ED">║
+║  *│</span><span class="syn_color_000000_background_E08080">                                            </span><span class="syn_color_000000_background_E4E3ED">║║ 5*│</span><span class="syn_color_000000_background_80E080">day_name week[7] = {"Sun", "Mon", "Tue", "We</span><span class="syn_color_000000_background_E4E3ED">║
+║ 7 │                                            ║║ 6 │                                            ║
+║ 8 │int main()                                  ║║ 7 │int main()                                  ║
+║ 9 │{                                           ║║ 8 │{                                           ║
+║10*│</span><span class="syn_color_000000_background_CBD1E1">  </span><span class="syn_color_000000_background_80E080">char *</span><span class="syn_color_000000_background_CBD1E1">*ptrw;                              </span><span class="syn_color_000000_background_E4E3ED">║║ 9*│</span><span class="syn_color_000000_background_CBD1E1">  </span><span class="syn_color_000000_background_80E080">day_name </span><span class="syn_color_000000_background_CBD1E1">*ptrw;                           </span><span class="syn_color_000000_background_E4E3ED">║
+║11 │                                            ║║10 │                                            ║
+║12 │  ptrw = week;                              ║║11 │  ptrw = week;                              ║
+║13 │  ptrw++;                                   ║║12 │  ptrw++;                                   ║
+║14 │                                            ║║13 │                                            ║
+║15 │  printf("%d\n", (int)ptrw - (int)week);    ║║14 │  printf("%d\n", (int)ptrw - (int)week);    ║
+║  -│</span><span class="syn_color_000000_background_E08080">                                            </span><span class="syn_color_000000_background_E4E3ED">║║15+│</span><span class="syn_color_000000_background_80E080">                                            </span><span class="syn_color_000000_background_E4E3ED">║
+║  -│</span><span class="syn_color_000000_background_E08080">                                            </span><span class="syn_color_000000_background_E4E3ED">║║16+│</span><span class="syn_color_000000_background_80E080">  return 0;                                 </span><span class="syn_color_000000_background_E4E3ED">║
+║16 │}                                           ║║17 │}                                           ║
+║ ~ │                                            ║║ ~ │                                            ║
+║ ~ │                                            ║║ ~ │                                            ║
+║ ~ │                                            ║║ ~ │                                            ║
+║ ~ │                                            ║║ ~ │                                            ║
+║ ~ │                                            ║║ ~ │                                            ║
+║ ~ │                                            ║║ ~ │                                            ║
+╚═══╧════════════════════════════════════════════╝╚═══╧════════════════════════════════════════════╝
+</span><span class="syn_color_E4E3ED_background_8E93A5"> 1</span><span class="syn_color_000000_background_81A7D9">Help    </span><span class="syn_color_E4E3ED_background_8E93A5"> 2</span><span class="syn_color_000000_background_81A7D9">Save    </span><span class="syn_color_E4E3ED_background_8E93A5"> 3</span><span class="syn_color_000000_background_81A7D9">        </span><span class="syn_color_E4E3ED_background_8E93A5"> 4</span><span class="syn_color_000000_background_81A7D9">Edit    </span><span class="syn_color_E4E3ED_background_8E93A5"> 5</span><span class="syn_color_000000_background_81A7D9">Merge   </span><span class="syn_color_E4E3ED_background_8E93A5"> 6</span><span class="syn_color_000000_background_81A7D9">        </span><span class="syn_color_E4E3ED_background_8E93A5"> 7</span><span class="syn_color_000000_background_81A7D9">Search  </span><span class="syn_color_E4E3ED_background_8E93A5"> 8</span><span class="syn_color_000000_background_81A7D9">        </span><span class="syn_color_E4E3ED_background_8E93A5"> 9</span><span class="syn_color_000000_background_81A7D9">Options </span><span class="syn_color_E4E3ED_background_8E93A5">10</span><span class="syn_color_000000_background_81A7D9">Quit    
+</span></pre>
